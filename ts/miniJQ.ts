@@ -12,7 +12,6 @@
  *   - detach
  */
 class MiniJQData {
-    readonly bob        : string = "bob";
     private elements    : HTMLElement[];
     constructor( elements: HTMLElement[] ) {
         this.elements = elements;
@@ -22,7 +21,7 @@ class MiniJQData {
 /***********************************************************************************************************************
  * Q2) Ecrivez la fonction miniJQ :
  *   - argument : un sélecteur CSS ou un Element du DOM
- *   - renvoi une instance de classe MiniJQData
+ *   - renvoi une instance de la classe MiniJQData
  */
 export let miniJQ = ( selecteur: string | HTMLElement | HTMLElement[] ) : MiniJQData => {
     let elements = [];
