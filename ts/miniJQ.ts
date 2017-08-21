@@ -12,7 +12,7 @@
  *   - detach
  */
 class MiniJQData {
-    private elements    : HTMLElement[];
+    private elements: HTMLElement[];
     constructor( elements: HTMLElement[] ) {
         this.elements = elements;
     }
@@ -23,7 +23,7 @@ class MiniJQData {
  *   - argument : un sélecteur CSS ou un Element du DOM
  *   - renvoi une instance de la classe MiniJQData
  */
-export let miniJQ = ( selecteur: string | HTMLElement | HTMLElement[] ) : MiniJQData => {
+export let miniJQ = (selecteur: string | HTMLElement | HTMLElement[]): MiniJQData => {
     let elements = [];
     if (selecteur.constructor === String) {
         console.log( selecteur, "is a string" );
