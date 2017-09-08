@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "noUnusedParameters": true,
+    "noUnusedParameters": false,
     "noUnusedLocals": true,
     "target": "es2015",
     "module": "system",
