@@ -97,11 +97,11 @@ export let miniJQ = (selecteur: string | Element | Element[]): MiniJQData => {
     if (typeof selecteur === "string") {
         console.log( selecteur, "is a string" );
     }
-    if (selecteur instanceof HTMLElement) {
-        console.log( selecteur, "is a HTMLElement" );
+    if (selecteur instanceof Element) {
+        console.log( selecteur, "is a Element" );
     }
     if (selecteur instanceof Array) {
-        console.log( selecteur, "is an array of HTMLElements" );
+        console.log( selecteur, "is an array of Elements" );
     }
     return new MiniJQData( elements ); // A modifier bien sur...
 };
